@@ -1,0 +1,17 @@
+data:
+  data_dir: data/PVF_10_112x112
+  img_size: 112
+
+model_path: weights/model.pth
+
+jepa:
+  model_name: vit_base
+  patch_size: 8
+  pred_depth: 6
+  pred_emb_dim: 384
+
+train:
+  seed: 42
+  batch_size: 128
+  num_workers: 0
+  precision: 6

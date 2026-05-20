@@ -1,2 +1,4 @@
-echo/
+data/
 weights/
+__pycache__/
+.ipynb_checkpoints/
