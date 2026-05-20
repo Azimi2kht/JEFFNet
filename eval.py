@@ -10,7 +10,7 @@ from src.utils.data import get_dataloaders, get_tfms
 from src.utils.evaluation import ClassificationEvaluator
 
 # ---- CONFIG ----
-cfg = load_config("configs/deploy.yaml")
+cfg = load_config("configs/eval.yaml")
 
 # data
 data_dir = cfg["data"]["data_dir"]

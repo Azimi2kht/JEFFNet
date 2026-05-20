@@ -1,0 +1,25 @@
+seeds: [857, 4385, 1428, 6672, 4367, 1764, 625, 6211, 8785, 9213] # rng = random.Random(123); seeds = rng.sample(range(10_000), k=10)
+data:
+  data_dir: PATH_TO_DATA
+  img_size: 112
+
+train:
+  seed: 42
+  jepa_checkpoint: PATH_TO_CHECKPOINT
+  results_path: results/
+  batch_size: 128
+  num_epochs: 40
+  lr: 0.0003
+  num_workers: 0
+  patience: 10
+  precision: 6
+  weight_decay: 0.0001
+  kfold_splits: 10
+  val_ratio: 0.1
+  jepa:
+    model_name: vit_base
+    patch_size: 8
+    pred_depth: 6
+    pred_emb_dim: 384
+
+
